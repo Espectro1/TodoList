@@ -23,11 +23,7 @@ export const ListContainer = () => {
 
     useEffect(() => {
         window.localStorage.setItem("todoList", JSON.stringify(state));
-        verifyCompletedActivities();
-    }, [state])
-
-
-    const verifyCompletedActivities = ()=>{
+        
         let taskCompleted = 0;
         state.forEach(function(task) {
             if ( task.checked ){
@@ -36,7 +32,6 @@ export const ListContainer = () => {
                     setMsg('Has cumplido todas tus actividades!');
                     setMsgError(false);
                 }
-               
             }else{
                     setMsg('');
                     setMsgError(true);
@@ -45,7 +40,8 @@ export const ListContainer = () => {
         if( taskCompleted === 0){
             setMsg('');
         }
-    }
+
+    }, [state])
 
     const handleOnSubmit = (e) =>{
         e.preventDefault();
