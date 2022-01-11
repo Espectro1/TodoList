@@ -80,7 +80,6 @@ export const ListContainer = () => {
     }
 
     const handleChecked = (taskName, checked) =>{
-        console.log('taskName', taskName, "checked", checked)
           const updateTask = {
             name: taskName,
             checked

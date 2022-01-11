@@ -1,5 +1,5 @@
 
-import { ADD_Task, DELETE_Task, DELETE_ALL_Task, ADD_Storage_Task, UPDATE_Task } from "../types/taskList";
+import { ADD_Task, DELETE_Task, DELETE_ALL_Task, UPDATE_Task } from "../types/taskList";
 
 const initialState = [];
 
@@ -18,14 +18,11 @@ const listReducer = (state = [], action) => {
         case DELETE_Task:
 
             return state.filter( task => task.name !== action.payload);
-            // return state.filter(task => task.id !== action.payload);
         
         case DELETE_ALL_Task:
 
             return [];
         case UPDATE_Task:
-            
-            // return state.filter( task => task.name !== action.payload);
 
             const updateTask = action.payload;
 
@@ -37,8 +34,6 @@ const listReducer = (state = [], action) => {
                 }
                 return task;
           });
-          
-          console.log("updated ", updateTask, );
              return updatedTasks;
 
         default:

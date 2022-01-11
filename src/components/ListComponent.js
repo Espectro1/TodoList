@@ -7,9 +7,7 @@ export const ListComponent = ({taskName, handleDelete, handleChecked, checked}) 
          <div className="list-container">
                     <div className="list-item">
                         <label className={checked ? "container-label text-decoration": "container-label"}> {taskName}                     
-                            <input type="checkbox" onClick={ () => {
-                                // setChecked(!checked);
-                            }}
+                            <input type="checkbox"
                             onChange={e => { handleChecked(taskName, !checked);  }}
                             checked={checked}
                             /> 
