@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url(../css/checkbox.css);
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #f2f2f2;
+}
+/* /- Menu -/ */
+.activities {
+  font-size: 22px;
+  text-align: end;
+  color: #706c6c;
+}
+
+.title-activities {
+  font-size: 32px;
+}
+.menu {
+  background: #3da5e2;
+  height: 80px;
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.container {
+  padding: 70px;
+  width: 60%;
+  margin: auto;
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+}
+.container p {
+  margin-bottom: 1em;
+}
+
+.container-input {
+  display: flex;
+  flex-direction: row;
+}
+.container-title {
+  display: flex;
+}
+
+.container-title button {
+  margin-left: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  margin: auto;
+  width: 90%;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px -5px rgb(0 0 0 / 40%);
+  text-align: center;
+  border: 1px solid #e3e3e3;
+}
+
+.form__input {
+  width: 100%;
+  background: none;
+  color: #706c6c;
+  font-size: 1rem;
+  padding: 0.6em 0.3em;
+  border: none;
+  border-bottom: 2px solid #000;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+}
+.form__input:focus {
+  border-bottom: 2px solid #3866f2;
+}
+
+.btn {
+  margin-left: 10px;
+  width: 200px;
+  background: #3866f2;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+
+  border: none;
+  border-radius: 5px;
+}
+.btn:hover {
+  background: #065688;
+  cursor: pointer;
+}
+
+.btn-delete {
+  padding: 5px 10px;
+  color: #fff;
+  background: #dc3545;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  max-height: 30px;
+}
+
+.btn-delete:hover {
+  background-color: #bb2d3b;
+  border-color: #b02a37;
+  cursor: pointer;
+}
+.w-100px {
+  width: 100px;
+}
+.w-250px {
+  width: 250px;
+}
+.mt-1 {
+  margin-top: 1em;
+}
+.mb-1 {
+  margin-bottom: 1em;
+}
+.pt-1 {
+  padding-top: 1em;
+}
+.pb-05 {
+  padding-bottom: 0.5em;
+}
+
+.list-container {
+  text-align: start;
+  width: 100%;
+}
+
+.list-item {
+  justify-content: center;
+  display: flex;
+  padding: 10px 0px;
+}
+.list-item:hover {
+  background-color: #f2f2f2;
+}
+label input {
+  margin-right: 5px;
+}
+
+.alert-error {
+  width: 80%;
+  margin: 50px auto 0;
+  background-color: #dc3545;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.alert-complete {
+  width: 80%;
+  margin: 50px auto 0;
+  background-color: #35ae6b;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+@media (max-width: 899px) {
+  .activities {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .container {
+    width: 80%;
+  }
+  .container-input {
+    flex-direction: column;
+  }
+  .container-title {
+    flex-direction: column;
+  }
+  .btn {
+    margin: 10px auto;
+    height: 40px;
+  }
+
+  .form__input {
+    margin-left: 40px;
+    width: auto;
+  }
+}

@@ -1,0 +1,100 @@
+.container-label {
+  display: block;
+  width: 100%;
+  margin-right: 10px;
+  position: relative;
+  margin-left: 5px;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.text-decoration {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.container-label-input {
+  display: block;
+  position: relative;
+  margin-left: 5px;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container-label-input input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+}
+
+.container-label:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container-label input:checked ~ .checkmark {
+  border: 1px solid #1987e0;
+  background-color: #2196f3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container-label input:checked ~ .checkmark:after {
+  display: block;
+}
+.container-label .checkmark:after {
+  left: 9px;
+  top: 4px;
+  width: 4px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media (max-width: 576px) {
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 23px;
+    background-color: #eee;
+  }
+}
