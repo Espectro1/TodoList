@@ -9,5 +9,11 @@
 
 ```
 
+#  Nota:
+```
+Para simular el efecto de eliminar cada nota, se tomó como id el contenido de la nota
+
+```
+
 
 
